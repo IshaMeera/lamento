@@ -7,7 +7,7 @@ import SeoHead from "../components/SeoHead";
 export default function Home() {
   return (
     <>
-      <SeoHead title='Mininal Blogging Tool: Create, Manage, Share and Grow Your Blog Easily' />
+      <SeoHead title='Lamento a Mininal Blogging Tool: Create, Manage, Share and Grow Your Blog Easily' />
       <Layout>
         <Hero />
         {/* <Feature /> */}
