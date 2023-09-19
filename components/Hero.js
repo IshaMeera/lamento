@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import { TypeAnimation } from "react-type-animation";
-import { MobWaitlistForm, LapWaitlistForm } from "./misc/WaitlistForm";
+import  SignUpFormReact from "./misc/SignUpFormReact";
 
 const Hero = ({
   listUser = [
@@ -63,13 +63,8 @@ const Hero = ({
 
             <div className=" mt-4 mb-6"></div>
 
-            {/* hide in smoler screen */}
-            <div className="hidden sm:flex">
-              <LapWaitlistForm />
-            </div>
-
-            <div className="flex flex-col justify-center items-center sm:hidden">
-              <MobWaitlistForm />
+            <div className="flex flex-col justify-center items-center">
+              <SignUpFormReact />
             </div>
           </div>
           <div className="flex w-full">
