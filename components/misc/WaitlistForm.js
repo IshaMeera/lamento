@@ -240,6 +240,8 @@ const MobWaitlistForm = () => {
               lineHeight: 20,
               border: "medium",
               cursor: "pointer",
+              width: 300,
+
             }}
           >
             Join Waitlist
