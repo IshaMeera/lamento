@@ -9,12 +9,12 @@ const defaultMeta = {
   description:
     'Lamento a Mininal Blogging Tool: Create, Manage, Share and Grow Your Blog Easily',
   // change base url of your web (without '/' at the end)
-  url: 'https://lamento.vercel.app',
+  url: 'https://lamento.in',
   type: 'website',
   robots: 'follow, index',
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status 
-  image: 'https://res.cloudinary.com/davkfrmah/image/upload/v1695125826/Lamento/lamento%20to%20all.jpg',
+  image: 'https://res.cloudinary.com/davkfrmah/image/upload/v1695348896/Lamento/optimised%20Illustration.jpg',
   author: 'Akilesh'
 };
 
