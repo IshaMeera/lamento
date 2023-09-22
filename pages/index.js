@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <SeoHead 
-      title='Lamento - Minimal Blogging Tool'
+      title='Lamento - Multi Platform Blogging Tool'
       siteName='Lamento'
       description='Lamento a Mininal Blogging Tool: Create, Manage, Share and Grow Your Blog Easily'
       url='https://lamento.in'
