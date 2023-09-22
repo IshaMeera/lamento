@@ -1,87 +1,94 @@
 import React, { useMemo } from "react";
 import Image from "next/image";
-import ButtonPrimary from "./misc/ButtonPrimary";
-import { motion } from "framer-motion";
+//import ButtonPrimary from "./misc/ButtonPrimary";
+//import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
-import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+//import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import { TypeAnimation } from "react-type-animation";
-import  SignUpFormReact from "./misc/SignUpFormReact";
+import SignUpFormReact from "./misc/SignUpFormReact";
+import illustration from "../public/assets/Illustration3.png";
 
-const Hero = ({
-  listUser = [
-    {
-      name: "Users",
-      number: "390",
-      icon: "/assets/Icon/heroicons_sm-user.svg",
-    },
-    {
-      name: "Locations",
-      number: "20",
-      icon: "/assets/Icon/gridicons_location.svg",
-    },
-    {
-      name: "Server",
-      number: "50",
-      icon: "/assets/Icon/bx_bxs-server.svg",
-    },
-  ],
-}) => {
-  const scrollAnimation = useMemo(() => getScrollAnimation(), []);
+const Hero = () =>
+  //  {
+  // listUser = [
+  //   {
+  //     name: "Users",
+  //     number: "390",
+  //     icon: "/assets/Icon/heroicons_sm-user.svg",
+  //   },
+  //   {
+  //     name: "Locations",
+  //     number: "20",
+  //     icon: "/assets/Icon/gridicons_location.svg",
+  //   },
+  //   {
+  //     name: "Server",
+  //     number: "50",
+  //     icon: "/assets/Icon/bx_bxs-server.svg",
+  //   },
+  // ],
+  // }
+  {
+    const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
-  return (
-    <div className="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto" id="about">
-      <ScrollAnimationWrapper>
-        <motion.div
-          className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16"
-          variants={scrollAnimation}
-        >
-          <div className=" flex flex-col justify-center items-center row-start-2 sm:row-start-1">
-            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-              Write once and publish to{" "}
-              <strong>
-                <TypeAnimation
-                  sequence={[
-                    // Same substring at the start will only be typed once, initially
-                    "Website",
-                    1000,
-                    "Dev.to",
-                    1000,
-                    "Medium",
-                    1000,
-                    "LinkedIn",
-                    1000,
-                    "Webflow",
-                    1000,
-                    "Framer",
-                    1000,
-                  ]}
-                  speed={50}
-                  repeat={Infinity}
+    return (
+      <div className="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto" id="about">
+        {/* </ScrollAnimationWrapper>  */}
+        <div>
+          <div
+            className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16"
+            variants={scrollAnimation}
+          >
+            <div className=" flex flex-col justify-center items-center row-start-2 sm:row-start-1">
+              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
+                Write once and publish to{" "}
+                <strong>
+                  <TypeAnimation
+                    sequence={[
+                      // Same substring at the start will only be typed once, initially
+                      "Website",
+                      1000,
+                      "Dev.to",
+                      1000,
+                      "Medium",
+                      1000,
+                      "LinkedIn",
+                      1000,
+                      "Webflow",
+                      1000,
+                      "Framer",
+                      1000,
+                    ]}
+                    speed={50}
+                    repeat={Infinity}
+                  />
+                </strong>
+              </h1>
+
+              <div className=" mt-4 mb-6"></div>
+
+              <div className="flex flex-col justify-center items-center">
+                <SignUpFormReact />
+              </div>
+            </div>
+            <div className="flex w-full">
+              <div className="h-full w-full" variants={scrollAnimation}>
+                <Image
+                  src={illustration}
+                  alt="Using Lamento to write and publish to multiple platforms"
+                  quality={80}
+                  width={1121}
+                  height={1080}
+                  layout="responsive"
+                  placeholder="blur"
+                  //priority
                 />
-              </strong>
-            </h1>
-
-            <div className=" mt-4 mb-6"></div>
-
-            <div className="flex flex-col justify-center items-center">
-              <SignUpFormReact />
+              </div>
             </div>
           </div>
-          <div className="flex w-full">
-            <motion.div className="h-full w-full" variants={scrollAnimation}>
-              <Image
-                src="/assets/Illustration3.png"
-                alt="VPN Illustrasi"
-                quality={100}
-                width={1121}
-                height={1080}
-                layout="responsive"
-              />
-            </motion.div>
-          </div>
-        </motion.div>
-      </ScrollAnimationWrapper>
-      {/* <div className="relative w-full flex">
+          {/* </ScrollAnimationWrapper> */}{" "}
+        </div>
+        {/* <div className="relative w-full flex">
         <ScrollAnimationWrapper className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
           {listUser.map((listUsers, index) => (
             <motion.div
@@ -109,8 +116,8 @@ const Hero = ({
           style={{ filter: "blur(114px)" }}
         ></div>
       </div> */}
-    </div>
-  );
-};
+      </div>
+    );
+  };
 
 export default Hero;
