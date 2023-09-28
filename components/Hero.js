@@ -77,8 +77,8 @@ const Hero = () =>
                   src={illustration}
                   alt="Using Lamento to write and publish to multiple platforms"
                   quality={80}
-                  width={1121}
-                  height={1080}
+                  width={100}
+                  height={95}
                   layout="responsive"
                   placeholder="blur"
                   //priority
