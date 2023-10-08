@@ -14,7 +14,7 @@ export default function Home() {
       url='https://lamento.in'
       type='website'
       robots='follow, index'
-      image='https://res.cloudinary.com/davkfrmah/image/upload/v1695348896/Lamento/optimised%20Illustration.jpg'
+      image='https://res.cloudinary.com/davkfrmah/image/upload/v1695125823/Lamento/lamento%20to%20web.png'
       author='Akilesh'      
       />
       <Layout>
