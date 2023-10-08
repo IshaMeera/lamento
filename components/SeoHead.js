@@ -14,7 +14,7 @@ const defaultMeta = {
   robots: 'follow, index',
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status 
-  image: 'https://res.cloudinary.com/davkfrmah/image/upload/v1695348896/Lamento/optimised%20Illustration.jpg',
+  image: 'https://res.cloudinary.com/davkfrmah/image/upload/v1695125823/Lamento/lamento%20to%20web.png',
   author: 'Akilesh'
 };
 
